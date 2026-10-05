@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TrustServiceStatusList xmlns="http://uri.etsi.org/02231/v2#" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="http://uri.etsi.org/02231/v2/additionaltypes#" xmlns:ns4="http://uri.etsi.org/01903/v1.3.2#" Id="ID0001" TSLTag="http://uri.etsi.org/19612/TSLTag">
+    <SchemeInformation>
+        <TSLVersionIdentifier>6</TSLVersionIdentifier>
+        <TSLSequenceNumber>1</TSLSequenceNumber>
+        <TSLType>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/EUgeneric</TSLType>
+        <SchemeOperatorName>
+            <Name xml:lang="en">XX National Supervisory Body</Name>
+        </SchemeOperatorName>
+        <SchemeOperatorAddress>
+            <PostalAddresses>
+                <PostalAddress xml:lang="en">
+                    <StreetAddress>1 Test Street</StreetAddress>
+                    <Locality>Test City</Locality>
+                    <PostalCode>00001</PostalCode>
+                    <CountryName>XX</CountryName>
+                </PostalAddress>
+            </PostalAddresses>
+            <ElectronicAddress>
+                <URI xml:lang="en">https://gov.xx.test</URI>
+            </ElectronicAddress>
+        </SchemeOperatorAddress>
+        <SchemeName>
+            <Name xml:lang="en">XX:Synthetic test trusted list</Name>
+        </SchemeName>
+        <SchemeInformationURI>
+            <URI xml:lang="en">https://diagencygw:8443/test/xx-scheme</URI>
+        </SchemeInformationURI>
+        <StatusDeterminationApproach>http://uri.etsi.org/TrstSvc/TrustedList/StatusDetn/EUappropriate</StatusDeterminationApproach>
+        <SchemeTypeCommunityRules>
+            <URI xml:lang="en">http://uri.etsi.org/TrstSvc/TrustedList/schemerules/EUcommon</URI>
+            <URI xml:lang="en">http://uri.etsi.org/TrstSvc/TrustedList/schemerules/XX</URI>
+        </SchemeTypeCommunityRules>
+        <SchemeTerritory>XX</SchemeTerritory>
+        <PolicyOrLegalNotice>
+            <TSLLegalNotice xml:lang="en">Synthetic test trusted list for XX territory. Not a real trusted list.</TSLLegalNotice>
+        </PolicyOrLegalNotice>
+        <HistoricalInformationPeriod>65535</HistoricalInformationPeriod>
+        <ListIssueDateTime>2025-01-01T00:00:00Z</ListIssueDateTime>
+        <NextUpdate>
+            <dateTime>2055-01-01T00:00:00Z</dateTime>
+        </NextUpdate>
+    </SchemeInformation>
+    <TrustServiceProviderList>
+        <!-- TSP 1: XX Gov Services — 4 services: 2 issuer (granted/undersupervision), 2 status (accredited/setbynationallaw) -->
+        <TrustServiceProvider>
+            <TSPInformation>
+                <TSPName><Name xml:lang="en">XX Gov Services</Name></TSPName>
+                <TSPTradeName><Name xml:lang="en">XX Government</Name></TSPTradeName>
+                <TSPAddress>
+                    <PostalAddresses>
+                        <PostalAddress xml:lang="en">
+                            <StreetAddress>1 Government Square</StreetAddress>
+                            <Locality>Test City</Locality>
+                            <PostalCode>00001</PostalCode>
+                            <CountryName>XX</CountryName>
+                        </PostalAddress>
+                    </PostalAddresses>
+                    <ElectronicAddress><URI xml:lang="en">https://gov.xx.test</URI></ElectronicAddress>
+                </TSPAddress>
+                <TSPInformationURI><URI xml:lang="en">https://gov.xx.test/trust-info</URI></TSPInformationURI>
+            </TSPInformation>
+            <TSPServices>
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/19602/SvcType/PID/Issuance</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">XX PID Issuance Service</Name></ServiceName>
+                        <ServiceDigitalIdentity><DigitalId><X509Certificate>MIIBjDCCATKgAwIBAgIQe5qIfbYy2JnQstZkZdlgzjAKBggqhkjOPQQDAjA2MQsw
+        CQYDVQQGEwJVVDENMAsGA1UEChMEVGVzdDEYMBYGA1UEAxMPWFggUElEIElzc3Vh
+        bmNlMCAXDTI2MDcyNzAzMTYzNloYDzIwNTYwNzE5MDQxNjM2WjA2MQswCQYDVQQG
+        EwJVVDENMAsGA1UEChMEVGVzdDEYMBYGA1UEAxMPWFggUElEIElzc3VhbmNlMFkw
+        EwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEJ05fUpv8frG88nR9wiMBi2F3vqZGepRZ
+        Ny+mc+TSHmoe3z5ivSMk9OQ/XgzEwT/y0krkoVNINQUywv0xxcgP1aMgMB4wDgYD
+        VR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwCgYIKoZIzj0EAwIDSAAwRQIgLKGN
+        gZblfDigIisO8POyUas3BA5/KGaP3S9rrf/px9wCIQCWrS6PNHGVSOimCJe1QI4u
+        +/78w/PGhyLLlymKwZCq4w==</X509Certificate></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/19602/SvcType/PubEAA/Issuance</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">XX PubEAA Issuance Service</Name></ServiceName>
+                        <ServiceDigitalIdentity><DigitalId><X509Certificate>MIIBkjCCATigAwIBAgIQbdm3RrOwnVawigc+TvJjaDAKBggqhkjOPQQDAjA5MQsw
+        CQYDVQQGEwJVVDENMAsGA1UEChMEVGVzdDEbMBkGA1UEAxMSWFggUHViRUFBIElz
+        c3VhbmNlMCAXDTI2MDcyNzAzMTYzNloYDzIwNTYwNzE5MDQxNjM2WjA5MQswCQYD
+        VQQGEwJVVDENMAsGA1UEChMEVGVzdDEbMBkGA1UEAxMSWFggUHViRUFBIElzc3Vh
+        bmNlMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjrEc5qHnLnsmMCn+oktVWj2A
+        ocg9UkcO/jC3DCoy6hu57X6wS6BSt+cne4OCXyhbvn9UHI2In6kptipvRznEC6Mg
+        MB4wDgYDVR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwCgYIKoZIzj0EAwIDSAAw
+        RQIgPyGdPAga/b+5ElMC6mO7veF2EUcyv69swgMr+2UTY5cCIQDzJ2HgLIoRa5I9
+        2n+rk/2dQorJyANjKNytIs76DPIXYw==</X509Certificate></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/undersupervision</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/19602/SvcType/PID/Revocation</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">XX PID Revocation Service</Name></ServiceName>
+                        <ServiceDigitalIdentity><DigitalId><X509Certificate>MIIBjzCCATagAwIBAgIQND0bkv8zglz3IVGLc4hZazAKBggqhkjOPQQDAjA4MQsw
+        CQYDVQQGEwJVVDENMAsGA1UEChMEVGVzdDEaMBgGA1UEAxMRWFggUElEIFJldm9j
+        YXRpb24wIBcNMjYwNzI3MDMxNjM2WhgPMjA1NjA3MTkwNDE2MzZaMDgxCzAJBgNV
+        BAYTAlVUMQ0wCwYDVQQKEwRUZXN0MRowGAYDVQQDExFYWCBQSUQgUmV2b2NhdGlv
+        bjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABDDKZVLklAUznjHFP0EQE/KDLWEA
+        6x2RZ5aCDuVceEIGDgITf92N6glwkA6PBoCM4pyLGVvPXNd7I86cwi80ZV6jIDAe
+        MA4GA1UdDwEB/wQEAwIHgDAMBgNVHRMBAf8EAjAAMAoGCCqGSM49BAMCA0cAMEQC
+        IGesbTENP1XAEYXcWKxzOcxnjAyxqkn7487lO+SonT72AiBqlr5ZvJ0P7j+5/MMD
+        JOcvf6dNIGNpw7OEBFKT1UYQ0A==</X509Certificate></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/accredited</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/19602/SvcType/PubEAA/Revocation</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">XX PubEAA Revocation Service</Name></ServiceName>
+                        <ServiceDigitalIdentity><DigitalId><X509Certificate>MIIBlzCCATygAwIBAgIQfBpu9lYhclGlavsUCzJ5rjAKBggqhkjOPQQDAjA7MQsw
+        CQYDVQQGEwJVVDENMAsGA1UEChMEVGVzdDEdMBsGA1UEAxMUWFggUHViRUFBIFJl
+        dm9jYXRpb24wIBcNMjYwNzI3MDMxNjM2WhgPMjA1NjA3MTkwNDE2MzZaMDsxCzAJ
+        BgNVBAYTAlVUMQ0wCwYDVQQKEwRUZXN0MR0wGwYDVQQDExRYWCBQdWJFQUEgUmV2
+        b2NhdGlvbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABFhuzMQbbie3YJmhszXc
+        jkFGroOQKxWNq99OFX97uxDsY8Tfb9OZxjbHBuVxso02qVzNfQIN/Dwl8EWBAb0A
+        VDOjIDAeMA4GA1UdDwEB/wQEAwIHgDAMBgNVHRMBAf8EAjAAMAoGCCqGSM49BAMC
+        A0kAMEYCIQCq0uWyZuQMjhqe1bN2FXgvB2fVXYyyCuJ9tjGKrl24GwIhAPOog6+L
+        4UZAT/pLsxIchjDVnXkebxs5KxK71qAENHYf</X509Certificate></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/setbynationallaw</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+            </TSPServices>
+        </TrustServiceProvider>
+        <!-- TSP 2: XX QTSP Alpha — 3 services: 1 issuer (CA/QC granted), 2 status (OCSP/QC recognised, CRL/QC granted) -->
+        <TrustServiceProvider>
+            <TSPInformation>
+                <TSPName><Name xml:lang="en">XX QTSP Alpha</Name></TSPName>
+                <TSPAddress>
+                    <PostalAddresses>
+                        <PostalAddress xml:lang="en">
+                            <StreetAddress>2 QTSP Street</StreetAddress>
+                            <Locality>Test City</Locality>
+                            <PostalCode>00002</PostalCode>
+                            <CountryName>XX</CountryName>
+                        </PostalAddress>
+                    </PostalAddresses>
+                    <ElectronicAddress><URI xml:lang="en">https://qtsp-alpha.xx.test</URI></ElectronicAddress>
+                </TSPAddress>
+                <TSPInformationURI><URI xml:lang="en">https://qtsp-alpha.xx.test/trust-info</URI></TSPInformationURI>
+            </TSPInformation>
+            <TSPServices>
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/CA/QC</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">XX Qualified CA Alpha</Name></ServiceName>
+                        <ServiceDigitalIdentity><DigitalId><X509Certificate>MIIBfzCCASSgAwIBAgIQL7jT171vD0D1Io7y+GcnPzAKBggqhkjOPQQDAjAvMQsw
+        CQYDVQQGEwJVVDENMAsGA1UEChMEVGVzdDERMA8GA1UEAxMIWFggQ0EgUUMwIBcN
+        MjYwNzI3MDMxNjM2WhgPMjA1NjA3MTkwNDE2MzZaMC8xCzAJBgNVBAYTAlVUMQ0w
+        CwYDVQQKEwRUZXN0MREwDwYDVQQDEwhYWCBDQSBRQzBZMBMGByqGSM49AgEGCCqG
+        SM49AwEHA0IABLmNqPB+KV6e+D0gHyd9d8aJo8I1BK3px1wr7RENU0KZhdskankv
+        sPd1++TuaSekT9XGC2CnrxnXEES84RCzrPOjIDAeMA4GA1UdDwEB/wQEAwIHgDAM
+        BgNVHRMBAf8EAjAAMAoGCCqGSM49BAMCA0kAMEYCIQDkQBJRzhJRUZQJe1+D3hyQ
+        sgfsX8N1/nRnBELVEOFn5gIhAI8RcJf3MVhMZ0/knLoghJefNLqPpVTn0U2K0iLu
+        VBAp</X509Certificate></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/Certstatus/OCSP/QC</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">XX Qualified OCSP Alpha</Name></ServiceName>
+                        <ServiceDigitalIdentity><DigitalId><X509Certificate>MIIBgzCCASigAwIBAgIQN7JHrCvOLo0Xbnj04gAV5zAKBggqhkjOPQQDAjAxMQsw
+        CQYDVQQGEwJVVDENMAsGA1UEChMEVGVzdDETMBEGA1UEAxMKWFggT0NTUCBRQzAg
+        Fw0yNjA3MjcwMzE2MzZaGA8yMDU2MDcxOTA0MTYzNlowMTELMAkGA1UEBhMCVVQx
+        DTALBgNVBAoTBFRlc3QxEzARBgNVBAMTClhYIE9DU1AgUUMwWTATBgcqhkjOPQIB
+        BggqhkjOPQMBBwNCAARHRvZopD7F6dUhOucqawzGIWKU6R6YvpCqPSxdjcyk7jVj
+        M76za8n0mnvlDIH8gggKZPHCa6jLXagDKG9rx8nIoyAwHjAOBgNVHQ8BAf8EBAMC
+        B4AwDAYDVR0TAQH/BAIwADAKBggqhkjOPQQDAgNJADBGAiEAjlXijKULHttlskQl
+        2hAYcAC52AiZ015KUww/gVq8GzACIQDTmc0iZYURl8bUhHr/kW5v14D6qJREi/nT
+        GEdsaW387g==</X509Certificate></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/recognisedatnationallevel</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/Certstatus/CRL/QC</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">XX Qualified CRL Alpha</Name></ServiceName>
+                        <ServiceDigitalIdentity><DigitalId><X509Certificate>MIIBgTCCASagAwIBAgIQXHIynR3XLkAciGf3fS+6YTAKBggqhkjOPQQDAjAwMQsw
+        CQYDVQQGEwJVVDENMAsGA1UEChMEVGVzdDESMBAGA1UEAxMJWFggQ1JMIFFDMCAX
+        DTI2MDcyNzAzMTYzNloYDzIwNTYwNzE5MDQxNjM2WjAwMQswCQYDVQQGEwJVVDEN
+        MAsGA1UEChMEVGVzdDESMBAGA1UEAxMJWFggQ1JMIFFDMFkwEwYHKoZIzj0CAQYI
+        KoZIzj0DAQcDQgAEBecabKiH7jsBpwSxAagGYskSMoViyP/3p+V6tQPZmbknRAor
+        u/2fxOgBrNfLtB50EntZA7gSUh0+AhGsB2hn8qMgMB4wDgYDVR0PAQH/BAQDAgeA
+        MAwGA1UdEwEB/wQCMAAwCgYIKoZIzj0EAwIDSQAwRgIhALVO291qRhCuLKEc9lLD
+        Ky7o7Bz8Qqzr+lsI1hogAAPRAiEA4AsukIhbyBpEGCQY3yKFM6ZQiFOUaghdLrP1
+        C54ljBA=</X509Certificate></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+            </TSPServices>
+        </TrustServiceProvider>
+        <!-- TSP 3: XX QTSP Beta — 4 services: 1 withdrawn (skip), 3 issuers -->
+        <TrustServiceProvider>
+            <TSPInformation>
+                <TSPName><Name xml:lang="en">XX QTSP Beta</Name></TSPName>
+                <TSPAddress>
+                    <PostalAddresses>
+                        <PostalAddress xml:lang="en">
+                            <StreetAddress>3 Beta Street</StreetAddress>
+                            <Locality>Test City</Locality>
+                            <PostalCode>00003</PostalCode>
+                            <CountryName>XX</CountryName>
+                        </PostalAddress>
+                    </PostalAddresses>
+                    <ElectronicAddress><URI xml:lang="en">https://qtsp-beta.xx.test</URI></ElectronicAddress>
+                </TSPAddress>
+                <TSPInformationURI><URI xml:lang="en">https://qtsp-beta.xx.test/trust-info</URI></TSPInformationURI>
+            </TSPInformation>
+            <TSPServices>
+                <TSPService>
+                    <!-- withdrawn — should be SKIPPED -->
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/EAA/Q</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">XX EAA/Q Beta (withdrawn)</Name></ServiceName>
+                        <ServiceDigitalIdentity><DigitalId><X509Certificate>MIIBkzCCATmgAwIBAgIRANs8WQiNUVbdzWBRnYOOic0wCgYIKoZIzj0EAwIwOTEL
+        MAkGA1UEBhMCVVQxDTALBgNVBAoTBFRlc3QxGzAZBgNVBAMTElhYIEVBQS9RIFdp
+        dGhkcmF3bjAgFw0yNjA3MjcwMzE2MzZaGA8yMDU2MDcxOTA0MTYzNlowOTELMAkG
+        A1UEBhMCVVQxDTALBgNVBAoTBFRlc3QxGzAZBgNVBAMTElhYIEVBQS9RIFdpdGhk
+        cmF3bjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABM+gdqbeGsDMaUZgxgjlz+m3
+        mCcdnY4y14WbZOpI41vri7NzicgOoOAJjpj2LCwshGONxlmvHg4kMyDkFxm0VKqj
+        IDAeMA4GA1UdDwEB/wQEAwIHgDAMBgNVHRMBAf8EAjAAMAoGCCqGSM49BAMCA0gA
+        MEUCIQDzFjG+OGst+nbyi2BIVvLxTiGDaMnqxQ6pL1Q35Ki3LwIgQOYxS7K2KD4A
+        iyNwVyo+G4i/AZMlFVvU9hZi2UW+YMY=</X509Certificate></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/withdrawn</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/EAA</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">XX EAA Beta</Name></ServiceName>
+                        <ServiceDigitalIdentity><DigitalId><X509Certificate>MIIBezCCASGgAwIBAgIRAJzZeJH0u9iiWXZJ1cLHPL4wCgYIKoZIzj0EAwIwLTEL
+        MAkGA1UEBhMCVVQxDTALBgNVBAoTBFRlc3QxDzANBgNVBAMTBlhYIEVBQTAgFw0y
+        NjA3MjcwMzE2MzZaGA8yMDU2MDcxOTA0MTYzNlowLTELMAkGA1UEBhMCVVQxDTAL
+        BgNVBAoTBFRlc3QxDzANBgNVBAMTBlhYIEVBQTBZMBMGByqGSM49AgEGCCqGSM49
+        AwEHA0IABL5J8E8BUiW+/FrgEZqhv2SVOCasrSxfEJwOsGhRQbxz0lWlS9nnVJ97
+        WN5OBDKtWpY6cjeLe0RmeNcXSKXsfwOjIDAeMA4GA1UdDwEB/wQEAwIHgDAMBgNV
+        HRMBAf8EAjAAMAoGCCqGSM49BAMCA0gAMEUCIQD9P4Zrc0ICxXOog1FWckmy3Cpo
+        IKuy2bcDq6ASuKsgYAIgVJJRMKGq5BYKkuddiPLrW3iyjqaiL8ygy0aJrkdJ1nY=</X509Certificate></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/EAA/Pub-EAA</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">XX Pub-EAA Beta</Name></ServiceName>
+                        <ServiceDigitalIdentity><DigitalId><X509Certificate>MIIBgzCCASmgAwIBAgIRAIMLcw01zcm/FWs/CL0kg94wCgYIKoZIzj0EAwIwMTEL
+        MAkGA1UEBhMCVVQxDTALBgNVBAoTBFRlc3QxEzARBgNVBAMTClhYIFB1Yi1FQUEw
+        IBcNMjYwNzI3MDMxNjM2WhgPMjA1NjA3MTkwNDE2MzZaMDExCzAJBgNVBAYTAlVU
+        MQ0wCwYDVQQKEwRUZXN0MRMwEQYDVQQDEwpYWCBQdWItRUFBMFkwEwYHKoZIzj0C
+        AQYIKoZIzj0DAQcDQgAEpA6co6HpZ74Sgk3mzdnhvDQqJe+Vp/Z1eB7+YDII8Vou
+        dRpiJm3UOKKZkcxpZGnJumbu94h8k7oDlrJduyypZqMgMB4wDgYDVR0PAQH/BAQD
+        AgeAMAwGA1UdEwEB/wQCMAAwCgYIKoZIzj0EAwIDSAAwRQIhANL/lajbgXSijVL/
+        2Y6xBVCml23SUZXPmjZmxn6fnhwiAiAo3zofN2QwgHSVA9E+r+NkWPcycmwMslPx
+        quU7uHDmJA==</X509Certificate></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/Svc/Svctype/Provider/PID</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">XX PID Provider Beta</Name></ServiceName>
+                        <ServiceDigitalIdentity><DigitalId><X509Certificate>MIIBizCCATKgAwIBAgIQEkIX22w5rEJu3NkIwe/4vDAKBggqhkjOPQQDAjA2MQsw
+        CQYDVQQGEwJVVDENMAsGA1UEChMEVGVzdDEYMBYGA1UEAxMPWFggUElEIFByb3Zp
+        ZGVyMCAXDTI2MDcyNzAzMTYzNloYDzIwNTYwNzE5MDQxNjM2WjA2MQswCQYDVQQG
+        EwJVVDENMAsGA1UEChMEVGVzdDEYMBYGA1UEAxMPWFggUElEIFByb3ZpZGVyMFkw
+        EwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE55k6FfnO5BAXm+w0Z34uQ2JtdwWI6t4l
+        EALoAzR4bHXYCgTm7xHvXFgmU0SFgpdk7TuLd6ZZuPiee8SqIraabqMgMB4wDgYD
+        VR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwCgYIKoZIzj0EAwIDRwAwRAIgEyvW
+        id9vSFzGZjsPAaLsq5feKVJUPzF3zz/NmtG1GRcCIGLTJZoVV9iyvP4blLqcRzMM
+        1NFcgmcCzoGwnrC0IYrB</X509Certificate></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+            </TSPServices>
+        </TrustServiceProvider>
+        <!-- TSP 4: XX Wallet Co — 1 service explicitly skipped (Wallet) -->
+        <TrustServiceProvider>
+            <TSPInformation>
+                <TSPName><Name xml:lang="en">XX Wallet Co</Name></TSPName>
+                <TSPAddress>
+                    <PostalAddresses>
+                        <PostalAddress xml:lang="en">
+                            <StreetAddress>4 Wallet Lane</StreetAddress>
+                            <Locality>Test City</Locality>
+                            <PostalCode>00004</PostalCode>
+                            <CountryName>XX</CountryName>
+                        </PostalAddress>
+                    </PostalAddresses>
+                    <ElectronicAddress><URI xml:lang="en">https://wallet-co.xx.test</URI></ElectronicAddress>
+                </TSPAddress>
+                <TSPInformationURI><URI xml:lang="en">https://wallet-co.xx.test/trust-info</URI></TSPInformationURI>
+            </TSPInformation>
+            <TSPServices>
+                <TSPService>
+                    <!-- Wallet — explicitly skipped (no entity table) -->
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/Svc/Svctype/Provider/Wallet</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">XX Wallet Provider (skipped)</Name></ServiceName>
+                        <ServiceDigitalIdentity><DigitalId><X509Certificate>MIIBgDCCASagAwIBAgIQRRlcuHxCOB3SmHzr8g8d9TAKBggqhkjOPQQDAjAwMQsw
+        CQYDVQQGEwJVVDENMAsGA1UEChMEVGVzdDESMBAGA1UEAxMJWFggV2FsbGV0MCAX
+        DTI2MDcyNzAzMTYzNloYDzIwNTYwNzE5MDQxNjM2WjAwMQswCQYDVQQGEwJVVDEN
+        MAsGA1UEChMEVGVzdDESMBAGA1UEAxMJWFggV2FsbGV0MFkwEwYHKoZIzj0CAQYI
+        KoZIzj0DAQcDQgAEiX+4KIYtJ9wSXwoX3DWtigGuITlL9r0ODL+/JJxrW/Mp+lnL
+        tICdw8sBQwHEeeytKT9X7gU4KO00UEd1aAGR6qMgMB4wDgYDVR0PAQH/BAQDAgeA
+        MAwGA1UdEwEB/wQCMAAwCgYIKoZIzj0EAwIDSAAwRQIgR3Jo8vyqMPpbKb9PhLwK
+        mVJIVVgAaGplghJMB8kVHTYCIQDHswQDdS1+3Qm8JfaphF2WQ2GI0ni46uCE4HTc
+        kK51ew==</X509Certificate></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+            </TSPServices>
+        </TrustServiceProvider>
+        <!-- TSP 5: XX Access CA — 2 services explicitly skipped (RPaccess, WRPAC) -->
+        <TrustServiceProvider>
+            <TSPInformation>
+                <TSPName><Name xml:lang="en">XX Access CA</Name></TSPName>
+                <TSPAddress>
+                    <PostalAddresses>
+                        <PostalAddress xml:lang="en">
+                            <StreetAddress>5 Access Blvd</StreetAddress>
+                            <Locality>Test City</Locality>
+                            <PostalCode>00005</PostalCode>
+                            <CountryName>XX</CountryName>
+                        </PostalAddress>
+                    </PostalAddresses>
+                    <ElectronicAddress><URI xml:lang="en">https://access-ca.xx.test</URI></ElectronicAddress>
+                </TSPAddress>
+                <TSPInformationURI><URI xml:lang="en">https://access-ca.xx.test/trust-info</URI></TSPInformationURI>
+            </TSPInformation>
+            <TSPServices>
+                <TSPService>
+                    <!-- RPaccess — explicitly skipped -->
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/Svc/Svctype/CA/RPaccess</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">XX RPaccess CA (skipped)</Name></ServiceName>
+                        <ServiceDigitalIdentity><DigitalId><X509Certificate>MIIBhDCCASugAwIBAgIRAIW/oJXf1paLEHKaR4HMqx8wCgYIKoZIzj0EAwIwMjEL
+        MAkGA1UEBhMCVVQxDTALBgNVBAoTBFRlc3QxFDASBgNVBAMTC1hYIFJQYWNjZXNz
+        MCAXDTI2MDcyNzAzMTYzNloYDzIwNTYwNzE5MDQxNjM2WjAyMQswCQYDVQQGEwJV
+        VDENMAsGA1UEChMEVGVzdDEUMBIGA1UEAxMLWFggUlBhY2Nlc3MwWTATBgcqhkjO
+        PQIBBggqhkjOPQMBBwNCAAQM5R1Yki8sNwwHPLiq17aEBE7nP4yBOTf3F9+JehDb
+        ROx9Rj5ZIbX58itM+sddlON21yRqvkDAk8R8tCNzO4U5oyAwHjAOBgNVHQ8BAf8E
+        BAMCB4AwDAYDVR0TAQH/BAIwADAKBggqhkjOPQQDAgNHADBEAiAIdADezAvRL+eN
+        iGT0lSoR1v4PlUOV4K3AYkBSMNXENgIgX3npLL1pqv+q6e+EHZS/GzT+8PqMCZIF
+        Xb6YqMADc48=</X509Certificate></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+                <TSPService>
+                    <!-- WRPAC/Issuance — explicitly skipped -->
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/19602/SvcType/WRPAC/Issuance</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">XX WRPAC Issuance (skipped)</Name></ServiceName>
+                        <ServiceDigitalIdentity><DigitalId><X509Certificate>MIIBfjCCASSgAwIBAgIQJfoRC0tj20sFVbbFRCJiwzAKBggqhkjOPQQDAjAvMQsw
+        CQYDVQQGEwJVVDENMAsGA1UEChMEVGVzdDERMA8GA1UEAxMIWFggV1JQQUMwIBcN
+        MjYwNzI3MDMxNjM2WhgPMjA1NjA3MTkwNDE2MzZaMC8xCzAJBgNVBAYTAlVUMQ0w
+        CwYDVQQKEwRUZXN0MREwDwYDVQQDEwhYWCBXUlBBQzBZMBMGByqGSM49AgEGCCqG
+        SM49AwEHA0IABH/FVk1Ss1pui89FuNrbLpvVCf7NpAeoaB/xFdTfjetnkDKNH47J
+        TUGU8DyWVSmCnAXNo4cqifpQfMGUGAtw2gGjIDAeMA4GA1UdDwEB/wQEAwIHgDAM
+        BgNVHRMBAf8EAjAAMAoGCCqGSM49BAMCA0gAMEUCIQCcpFBNCQSzO74TfzC6NQGH
+        dpPxhoydwNvKjfhEAvRr8AIgHRLMKQFLMSvdcHgo3BbqZbV8rSVtqdPuOQqIr7KX
+        /7k=</X509Certificate></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+            </TSPServices>
+        </TrustServiceProvider>
+        <!-- TSP 6: XX QTSP Gamma — 2 services: deprecated OCSP (skip) + non-qual CRL (status provider) -->
+        <TrustServiceProvider>
+            <TSPInformation>
+                <TSPName><Name xml:lang="en">XX QTSP Gamma</Name></TSPName>
+                <TSPAddress>
+                    <PostalAddresses>
+                        <PostalAddress xml:lang="en">
+                            <StreetAddress>6 Gamma Road</StreetAddress>
+                            <Locality>Test City</Locality>
+                            <PostalCode>00006</PostalCode>
+                            <CountryName>XX</CountryName>
+                        </PostalAddress>
+                    </PostalAddresses>
+                    <ElectronicAddress><URI xml:lang="en">https://qtsp-gamma.xx.test</URI></ElectronicAddress>
+                </TSPAddress>
+                <TSPInformationURI><URI xml:lang="en">https://qtsp-gamma.xx.test/trust-info</URI></TSPInformationURI>
+            </TSPInformation>
+            <TSPServices>
+                <TSPService>
+                    <!-- deprecated — should be SKIPPED -->
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/Certstatus/OCSP</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">XX OCSP Non-Qual Gamma (deprecated)</Name></ServiceName>
+                        <ServiceDigitalIdentity><DigitalId><X509Certificate>MIIBjTCCATKgAwIBAgIQJ2vEX7K9u38WiSJSvuYIijAKBggqhkjOPQQDAjA2MQsw
+        CQYDVQQGEwJVVDENMAsGA1UEChMEVGVzdDEYMBYGA1UEAxMPWFggT0NTUCBOb25R
+        dWFsMCAXDTI2MDcyNzAzMTYzNloYDzIwNTYwNzE5MDQxNjM2WjA2MQswCQYDVQQG
+        EwJVVDENMAsGA1UEChMEVGVzdDEYMBYGA1UEAxMPWFggT0NTUCBOb25RdWFsMFkw
+        EwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEKC/7fIaFMSwOsF25i6ouXG4K0jMnd9M3
+        UPQHefpfgH0TAnUtovIGBYhpvBCz30E9ELqLAxRFeakO9W/ymfsNJaMgMB4wDgYD
+        VR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwCgYIKoZIzj0EAwIDSQAwRgIhAI6c
+        9RFmwNb1DOanPkhudNJqGmFEopq/87ed7P8Oi/qqAiEAuYhF1qQ8hwUNotE8mpBS
+        byKiYBhKdKURF82KxlO7x3c=</X509Certificate></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/deprecatedatnationallevel</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/Certstatus/CRL</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">XX CRL Non-Qual Gamma</Name></ServiceName>
+                        <ServiceDigitalIdentity><DigitalId><X509Certificate>MIIBizCCATGgAwIBAgIRAIUZMF5e0A2P9kLV6Ps1nlgwCgYIKoZIzj0EAwIwNTEL
+        MAkGA1UEBhMCVVQxDTALBgNVBAoTBFRlc3QxFzAVBgNVBAMTDlhYIENSTCBOb25R
+        dWFsMCAXDTI2MDcyNzAzMTYzNloYDzIwNTYwNzE5MDQxNjM2WjA1MQswCQYDVQQG
+        EwJVVDENMAsGA1UEChMEVGVzdDEXMBUGA1UEAxMOWFggQ1JMIE5vblF1YWwwWTAT
+        BgcqhkjOPQIBBggqhkjOPQMBBwNCAAToXsUqJR93ofNp+ZwvzK6QjD2dKavLJ+6T
+        jKdCQFo/qsqTmRxDKdmZQkRuMLy+ddgD0yuQ7LpP4dEKKsvzs+LToyAwHjAOBgNV
+        HQ8BAf8EBAMCB4AwDAYDVR0TAQH/BAIwADAKBggqhkjOPQQDAgNIADBFAiAqzR/4
+        kgZeQ8rdVG48ljn2AYN5sPjcfQWCPlWcvyMZ/wIhAI+rctcVEjdaBmYWK7r1N0/A
+        1AeHQLBFVHITckfvd5LI</X509Certificate></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+            </TSPServices>
+        </TrustServiceProvider>
+    </TrustServiceProviderList>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/><Reference URI="#ID0001"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>FOx6MPbXFfHjb4kaR8HSH++0JX9+FDHYug+KMBmgqnk=</DigestValue></Reference></SignedInfo><SignatureValue>pVlhgmpdzYxLttqIP5Gk5PHVSBZzLBcbccEyO+xfx7PYxzmIL6boYK/dRZXE0n2xwfBFtG898lRpRLWSV7dRAA==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIBhjCCASygAwIBAgIQaRmHWaFCEyLdInIvGGKcMzAKBggqhkjOPQQDAjAzMQswCQYDVQQGEwJYWDENMAsGA1UEChMEVGVzdDEVMBMGA1UEAxMMWFggVEwgU2lnbmVyMCAXDTI2MDcyNzAzMTYzNloYDzIwNTYwNzE5MDQxNjM2WjAzMQswCQYDVQQGEwJYWDENMAsGA1UEChMEVGVzdDEVMBMGA1UEAxMMWFggVEwgU2lnbmVyMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELfZL3rpEzzzcAsObmsnYBVOrzAnIwsKgEHFaRuaxP2RURU3qUZ6wxdccetiIKrdPiGFMa40EFJ3pe0J6cJCjvqMgMB4wDgYDVR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwCgYIKoZIzj0EAwIDSAAwRQIgFWxFomcQNYsmle8g8/FIKpI2x8x8oRAuX2rIbIAAz/MCIQDwLxiIFnR+SSifkeROriZbjo6RRiJFxycIGQDX+xEAxg==</X509Certificate></X509Data></KeyInfo></Signature></TrustServiceStatusList>

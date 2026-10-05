@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Synthetic ZZ trusted list used by autotest to exercise the skipped-without-cert warning path.
+     TSP 1 has a valid X509Certificate and is imported (1 issuer entity).
+     TSP 2 has only an X509SubjectName (no X509Certificate) and must be skipped, triggering
+     the etsiTlSkippedIssuersWithoutCert warning in updateTrustedIssuers.
+     There is intentionally no <Signature> block — the test creates the registry without signing_certs,
+     so signature verification is skipped (soft check). -->
+<TrustServiceStatusList xmlns="http://uri.etsi.org/02231/v2#" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="http://uri.etsi.org/02231/v2/additionaltypes#" xmlns:ns4="http://uri.etsi.org/01903/v1.3.2#" Id="ID0001" TSLTag="http://uri.etsi.org/19612/TSLTag">
+    <SchemeInformation>
+        <TSLVersionIdentifier>6</TSLVersionIdentifier>
+        <TSLSequenceNumber>1</TSLSequenceNumber>
+        <TSLType>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/EUgeneric</TSLType>
+        <SchemeOperatorName>
+            <Name xml:lang="en">ZZ National Supervisory Body</Name>
+        </SchemeOperatorName>
+        <SchemeOperatorAddress>
+            <PostalAddresses>
+                <PostalAddress xml:lang="en">
+                    <StreetAddress>1 ZZ Test Street</StreetAddress>
+                    <Locality>ZZ Test City</Locality>
+                    <PostalCode>00001</PostalCode>
+                    <CountryName>ZZ</CountryName>
+                </PostalAddress>
+            </PostalAddresses>
+            <ElectronicAddress>
+                <URI xml:lang="en">https://gov.zz.test</URI>
+            </ElectronicAddress>
+        </SchemeOperatorAddress>
+        <SchemeName>
+            <Name xml:lang="en">ZZ:Synthetic no-cert test trusted list</Name>
+        </SchemeName>
+        <SchemeInformationURI>
+            <URI xml:lang="en">https://diagencygw:8443/test/zz-scheme</URI>
+        </SchemeInformationURI>
+        <StatusDeterminationApproach>http://uri.etsi.org/TrstSvc/TrustedList/StatusDetn/EUappropriate</StatusDeterminationApproach>
+        <SchemeTypeCommunityRules>
+            <URI xml:lang="en">http://uri.etsi.org/TrstSvc/TrustedList/schemerules/EUcommon</URI>
+            <URI xml:lang="en">http://uri.etsi.org/TrstSvc/TrustedList/schemerules/ZZ</URI>
+        </SchemeTypeCommunityRules>
+        <SchemeTerritory>ZZ</SchemeTerritory>
+        <PolicyOrLegalNotice>
+            <TSLLegalNotice xml:lang="en">Synthetic test trusted list for ZZ territory. Not a real trusted list.</TSLLegalNotice>
+        </PolicyOrLegalNotice>
+        <HistoricalInformationPeriod>65535</HistoricalInformationPeriod>
+        <ListIssueDateTime>2025-01-01T00:00:00Z</ListIssueDateTime>
+        <NextUpdate>
+            <dateTime>2055-01-01T00:00:00Z</dateTime>
+        </NextUpdate>
+    </SchemeInformation>
+    <TrustServiceProviderList>
+        <!-- TSP 1: valid cert — produces 1 issuer entity (eu.europa.ec.eudi.pid.1 + urn:eudi:pid:1 = 2 rows via default docTypes) -->
+        <TrustServiceProvider>
+            <TSPInformation>
+                <TSPName><Name xml:lang="en">ZZ Valid TSP</Name></TSPName>
+                <TSPAddress>
+                    <PostalAddresses>
+                        <PostalAddress xml:lang="en">
+                            <StreetAddress>1 ZZ Valid Road</StreetAddress>
+                            <Locality>ZZ Test City</Locality>
+                            <PostalCode>00001</PostalCode>
+                            <CountryName>ZZ</CountryName>
+                        </PostalAddress>
+                    </PostalAddresses>
+                    <ElectronicAddress><URI xml:lang="en">https://valid.zz.test</URI></ElectronicAddress>
+                </TSPAddress>
+                <TSPInformationURI><URI xml:lang="en">https://valid.zz.test/trust-info</URI></TSPInformationURI>
+            </TSPInformation>
+            <TSPServices>
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/19602/SvcType/PID/Issuance</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">ZZ Valid PID Issuance</Name></ServiceName>
+                        <!-- Reusing the YY PID Issuance certificate from eudi-yy-tl-synthetic.xml -->
+                        <ServiceDigitalIdentity><DigitalId><X509Certificate>MIIBjDCCATKgAwIBAgIQdGSmZqe5zcTVP4mAhobKdTAKBggqhkjOPQQDAjA2MQsw
+        CQYDVQQGEwJVVDENMAsGA1UEChMEVGVzdDEYMBYGA1UEAxMPWVkgUElEIElzc3Vh
+        bmNlMCAXDTI2MDcyNzAzMTYzNloYDzIwNTYwNzE5MDQxNjM2WjA2MQswCQYDVQQG
+        EwJVVDENMAsGA1UEChMEVGVzdDEYMBYGA1UEAxMPWVkgUElEIElzc3VhbmNlMFkw
+        EwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEZRXXNEDPv/mwtZEDV+QR7dldVMjV7w+7
+        5HxISU32DGk7sXX+3VC84H0hGXvqOdIzbnBnWwD/wFNOPqI5HftmsKMgMB4wDgYD
+        VR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwCgYIKoZIzj0EAwIDSAAwRQIhAKFm
+        zrkkO66ArJR5n8pRZF+BKvveL+6ZmLpWtepIZ1TvAiBN67FNm/6JK6qHM7oAflPx
+        nIGBBXm1nFHuCX0mLCodLA==</X509Certificate></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+            </TSPServices>
+        </TrustServiceProvider>
+        <!-- TSP 2: no X509Certificate, only X509SubjectName — certPEM will be absent after parsing,
+             so this entry is skipped and counted in the etsiTlSkippedIssuersWithoutCert warning. -->
+        <TrustServiceProvider>
+            <TSPInformation>
+                <TSPName><Name xml:lang="en">ZZ No-Cert TSP</Name></TSPName>
+                <TSPAddress>
+                    <PostalAddresses>
+                        <PostalAddress xml:lang="en">
+                            <StreetAddress>2 ZZ No-Cert Road</StreetAddress>
+                            <Locality>ZZ Test City</Locality>
+                            <PostalCode>00002</PostalCode>
+                            <CountryName>ZZ</CountryName>
+                        </PostalAddress>
+                    </PostalAddresses>
+                    <ElectronicAddress><URI xml:lang="en">https://nocert.zz.test</URI></ElectronicAddress>
+                </TSPAddress>
+                <TSPInformationURI><URI xml:lang="en">https://nocert.zz.test/trust-info</URI></TSPInformationURI>
+            </TSPInformation>
+            <TSPServices>
+                <TSPService>
+                    <!-- X509SubjectName only — no X509Certificate.
+                         The parser returns certPEM=undefined for this entry (warnNonCertDigitalId path),
+                         so updateTrustedIssuers skips it and fires etsiTlSkippedIssuersWithoutCert. -->
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/19602/SvcType/PID/Issuance</ServiceTypeIdentifier>
+                        <ServiceName><Name xml:lang="en">ZZ No-Cert PID Issuance (skipped)</Name></ServiceName>
+                        <ServiceDigitalIdentity><DigitalId><X509SubjectName>CN=ZZ No-Cert PID Issuance, C=ZZ</X509SubjectName></DigitalId></ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                        <StatusStartingTime>2025-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+            </TSPServices>
+        </TrustServiceProvider>
+    </TrustServiceProviderList>
+</TrustServiceStatusList>
