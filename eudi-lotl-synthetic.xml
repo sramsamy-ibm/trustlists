@@ -53,7 +53,7 @@
                         </DigitalId>
                     </ServiceDigitalIdentity>
                 </ServiceDigitalIdentities>
-                <TSLLocation>https://diagencygw:8443/autotest_mocks/etsi_tl/eudi-lotl-synthetic.xml</TSLLocation>
+                <TSLLocation>https://raw.githubusercontent.com/sramsamy-ibm/trustlists/refs/heads/main/eudi-lotl-synthetic.xml</TSLLocation>
                 <AdditionalInformation>
                     <OtherInformation>
                         <TSLType>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/EUlistofthelists</TSLType>
@@ -101,7 +101,7 @@
                         </DigitalId>
                     </ServiceDigitalIdentity>
                 </ServiceDigitalIdentities>
-                <TSLLocation>https://diagencygw:8443/autotest_mocks/etsi_tl/eudi-xx-tl-synthetic.xml</TSLLocation>
+                <TSLLocation>https://raw.githubusercontent.com/sramsamy-ibm/trustlists/refs/heads/main/eudi-xx-tl-synthetic.xml</TSLLocation>
                 <AdditionalInformation>
                     <OtherInformation>
                         <TSLType>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/EUgeneric</TSLType>
@@ -142,7 +142,7 @@
                         </DigitalId>
                     </ServiceDigitalIdentity>
                 </ServiceDigitalIdentities>
-                <TSLLocation>https://diagencygw:8443/autotest_mocks/etsi_tl/eudi-yy-tl-synthetic.xml</TSLLocation>
+                <TSLLocation>https://raw.githubusercontent.com/sramsamy-ibm/trustlists/refs/heads/main/eudi-yy-tl-synthetic.xml</TSLLocation>
                 <AdditionalInformation>
                     <OtherInformation>
                         <TSLType>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/EUgeneric</TSLType>
@@ -172,4 +172,4 @@
             <dateTime>2055-01-01T00:00:00Z</dateTime>
         </NextUpdate>
     </SchemeInformation>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/><Reference URI="#ID0001"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>HbtC89jdBqR/t5ZxTlS0LrpgoxOa+nseW5IGYTJHMPk=</DigestValue></Reference></SignedInfo><SignatureValue>xqPCILi97HY0boJfBduq2PXWHqUcZKlK4oOaLWF7QhhSvkMc+ddSvvrnRrWOTndJWMum4hLedgwkhSNqPswusw==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIBmDCCAT6gAwIBAgIQELQyax+mHEuJ7THGbXJS8zAKBggqhkjOPQQDAjA8MQswCQYDVQQGEwJFVTENMAsGA1UEChMEVGVzdDEeMBwGA1UEAxMVU3ludGhldGljIExPVEwgU2lnbmVyMCAXDTI2MDcyNzAzMTYzNloYDzIwNTYwNzE5MDQxNjM2WjA8MQswCQYDVQQGEwJFVTENMAsGA1UEChMEVGVzdDEeMBwGA1UEAxMVU3ludGhldGljIExPVEwgU2lnbmVyMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEfasuP/1oJ80CHFkA/zyw4mLXufAkj/kl4BmM5wVNNKm1C0I/zNG2pPJfRreGGeohUVHXDQpYMTmE3QxksoxxMaMgMB4wDgYDVR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwCgYIKoZIzj0EAwIDSAAwRQIhAMFMsBsY0MmHWBOaAdTj/Ufaq5Ili48TFk2EnLboo1yyAiAO8BmX5CCyT2KvV3mFNb06R92erXC0LG8Xwo6lhiNV8A==</X509Certificate></X509Data></KeyInfo></Signature></TrustServiceStatusList>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/><Reference URI="#ID0001"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>i6lqG8aRIu8g5O/tFunlA1mPdr28dQ43uA8hmnY2Q1Y=</DigestValue></Reference></SignedInfo><SignatureValue>XGNf6eTYdd8J8Ypxy97L8it+dGL+PmJ+/gj1tLeZgt99gdQXwxDl1UiwOtgLGO60Xk0uHKlXHrzQWAJ1JXmK1Q==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIBmDCCAT6gAwIBAgIQELQyax+mHEuJ7THGbXJS8zAKBggqhkjOPQQDAjA8MQswCQYDVQQGEwJFVTENMAsGA1UEChMEVGVzdDEeMBwGA1UEAxMVU3ludGhldGljIExPVEwgU2lnbmVyMCAXDTI2MDcyNzAzMTYzNloYDzIwNTYwNzE5MDQxNjM2WjA8MQswCQYDVQQGEwJFVTENMAsGA1UEChMEVGVzdDEeMBwGA1UEAxMVU3ludGhldGljIExPVEwgU2lnbmVyMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEfasuP/1oJ80CHFkA/zyw4mLXufAkj/kl4BmM5wVNNKm1C0I/zNG2pPJfRreGGeohUVHXDQpYMTmE3QxksoxxMaMgMB4wDgYDVR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwCgYIKoZIzj0EAwIDSAAwRQIhAMFMsBsY0MmHWBOaAdTj/Ufaq5Ili48TFk2EnLboo1yyAiAO8BmX5CCyT2KvV3mFNb06R92erXC0LG8Xwo6lhiNV8A==</X509Certificate></X509Data></KeyInfo></Signature></TrustServiceStatusList>
